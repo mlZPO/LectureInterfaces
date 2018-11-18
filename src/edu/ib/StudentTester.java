@@ -18,14 +18,14 @@ public class StudentTester {
 
         // sorting using compare interface
         testArray=deepStudentCopy(students);
-        Arrays.sort(students);
-        System.out.println("After sorting : " + Arrays.toString(students));
+        Arrays.sort(testArray);
+        System.out.println("After sorting : " + Arrays.toString(testArray));
 
 
         // sorting using comparator interface
         testArray=deepStudentCopy(students);
-        Arrays.sort(students, new GPAComparator());
-        System.out.println("After sorting : " + Arrays.toString(students));
+        Arrays.sort(testArray, new GPAComparator());
+        System.out.println("After sorting : " + Arrays.toString(testArray));
 
 
 
